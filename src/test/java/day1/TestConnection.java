@@ -16,11 +16,18 @@ public class TestConnection {
         // How do you connect your JAVA (IDE) to Database ? The Answer is Below:
    /*
         I use JDBC to connect to Database.
-        1. I use CONNECTION INTERFACE to make a connection.
+        1. I use CONNECTION INTERFACE to make a connection.  --> here we need the connection String
               Connection conn = DriverManager.getConnection(connectionStr,username,password)
-              String connectionStr = "jdbc:oracle:thin:@54.172.251.212:1521:XE"; --> This is the URL
+
+              (
+              String connectionStr = "jdbc:oracle:thin:@54.172.251.212:1521:XE"; --> This is the connection String (the
+               URL ) --> includes: jdbc --> oracle (The vendor name) --> thin ( driver) --> @ --> 54.172.251.212 (my IP address)
+               --> 1521 (port number of SQL developer --> XE (SID)
+               )
+
               String username = "hr" ; --> username
               String password = "hr" ; --> password
+
         2. Then I use STATEMENT INTERFACE create a statement.
                Statement stmnt = conn.createStatement();
            Then I execute a QUERY to get the result.
@@ -30,6 +37,12 @@ public class TestConnection {
          This how i connect my IDE to Database.
          Usually we create a method to connect our class to database (if not we have
          to write the whole code to connect for every class)
+
+      CLOSE:
+      After Usage we have to close the CONNECTION, STATEMENT and ResultSet.
+      conn.close();
+      stmnt.close();
+      rs.close();
    */
 
         // REPLACE THIS IP ADDRESS WITH YOUR OWN THAT WORKING IN SQL DEVELOPER

@@ -9,6 +9,8 @@ public class MovingResultSetPointer {
         // we want to create a statement object that generate
         //  - ResultSet that can move forward and backward anytime
         String connectionStr = "jdbc:oracle:thin:@52.201.187.226:1521:XE";
+        // this is the connect String we need to provide
+        // this String includes: jdbc
         String username = "hr" ;
         String password = "hr" ;
 
