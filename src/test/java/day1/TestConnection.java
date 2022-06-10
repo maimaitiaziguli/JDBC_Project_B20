@@ -38,11 +38,11 @@ public class TestConnection {
          Usually we create a method to connect our class to database (if not we have
          to write the whole code to connect for every class)
 
-      CLOSE:
-      After Usage we have to close the CONNECTION, STATEMENT and ResultSet.
-      conn.close();
-      stmnt.close();
-      rs.close();
+      CLOSE: At the end
+             After Usage we have to close the CONNECTION, STATEMENT and ResultSet.
+             conn.close();
+             stmnt.close();
+             rs.close();
    */
 
         // REPLACE THIS IP ADDRESS WITH YOUR OWN THAT WORKING IN SQL DEVELOPER
